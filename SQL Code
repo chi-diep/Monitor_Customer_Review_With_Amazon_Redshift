@@ -60,8 +60,11 @@ WHERE monitorID = 2;
 -- Delete all monitors with a rating less than 4.0
 DELETE FROM AmazonMonitor
 WHERE rating < 4.0;
+```
 
 ### AmazonReview Table
+
+```sql
 -- Table to store reviews tied to monitors
 CREATE TABLE AmazonReview (
     reviewID INTEGER PRIMARY KEY NOT NULL,
@@ -124,3 +127,4 @@ WHERE reviewID = 102;
 -- Delete all 1-star reviews
 DELETE FROM AmazonReview
 WHERE rating = 1;
+```
